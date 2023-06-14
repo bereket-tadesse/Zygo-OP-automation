@@ -43,6 +43,11 @@ def save(directory , sampleName):
 
     print("ctrl + s pressed")
     pyautogui.typewrite(directory + sampleName)
+    
+    ## need to find the lcoation of OK button from the compurer screen size
+    # pysutogui.position()
+    # pyautogui.move (x,y, time)
+    # pyautogui.click()
 
 
 def repeatCapture(numberOfCaptures, totalTimeInterval, sampleName, scanLength, directory): #time in minute

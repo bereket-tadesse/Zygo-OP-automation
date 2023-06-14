@@ -11,4 +11,7 @@ This python script needs the following parameters:
 
 - and the directory path for saving the captured files.
 
- Project file hierarchy 
+
+Check requirements.txt for required packages. 
+
+>> Project file hierarchy <<
