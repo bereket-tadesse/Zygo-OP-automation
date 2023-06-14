@@ -1,4 +1,4 @@
-<h1> ####### Zygo Profilometer Automation program #### <h1/>
+ ####### Zygo Profilometer Automation program #### 
   
   
   
@@ -13,5 +13,4 @@ This python script needs the following parameters:
 
 - and the directory path for saving the captured files.
 
-
-  <h3> Project file hierarchy </h3>
+ Project file hierarchy 
