@@ -1,6 +1,6 @@
 from functions import *
-#main program to run
 
+#main program to run
 def run():
     scanLength = int(input("Enter scan length in microns: "))
     numberOfCaptures = int(input("Enter number of captures requried: "))
