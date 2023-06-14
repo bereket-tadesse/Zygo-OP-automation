@@ -23,17 +23,23 @@ def waitTime(scanLength):
 def adjustLight():
     time.sleep(0.2)
     pyautogui.press('f5')
+
+    print("f5pressed")
     time.sleep(1)
 
 def takePicture():
     time.sleep(0.2)
     pyautogui.press('f4')
+
+    print("f4pressed")
     time.sleep(1)
 
 #the format is: C:/directory/ ...  /
 def save(directory , sampleName):
     time.sleep(0.5)
     pyautogui.press('s', ctrl = True)
+
+    print("ctrl + s pressed")
     pyautogui.typewrite(directory + sampleName)
 
 
@@ -41,6 +47,7 @@ def repeatCapture(numberOfCaptures, totalTimeInterval, sampleName, scanLength, d
 
     for i in range(numberOfCaptures):
         sampleName = sampleName + "AtTime" + str((totalTimeInterval / numberOfCaptures)) + "Min"
+        print(sampleName)
         time.sleep(0.1)
         adjustLight()
         takePicture()
