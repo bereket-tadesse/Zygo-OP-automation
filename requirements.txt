@@ -1,0 +1,2 @@
+#program requires pyautogui package.
+#To install the program run the command python -m pip install pyautogui.
