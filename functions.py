@@ -7,7 +7,9 @@ import time
 #Scanlength paired with the time it takes to finish scan
 def waitTime(scanLength):
     match scanLength:
-        case 5,10:
+        case 5:
+            return 1
+        case 10:
             return 1
         case 20:
             return 2
@@ -37,7 +39,7 @@ def takePicture():
 #the format is: C:/directory/ ...  /
 def save(directory , sampleName):
     time.sleep(0.5)
-    pyautogui.press('s', ctrl = True)
+    pyautogui.hotkey('ctrl', 's')
 
     print("ctrl + s pressed")
     pyautogui.typewrite(directory + sampleName)
@@ -46,13 +48,16 @@ def save(directory , sampleName):
 def repeatCapture(numberOfCaptures, totalTimeInterval, sampleName, scanLength, directory): #time in minute
 
     for i in range(numberOfCaptures):
-        sampleName = sampleName + "AtTime" + str((totalTimeInterval / numberOfCaptures)) + "Min"
+        sampleName = sampleName + "AtTime" + str(i*(totalTimeInterval / numberOfCaptures)) + "Min"
         print(sampleName)
         time.sleep(0.1)
         adjustLight()
         takePicture()
         time.sleep(waitTime(scanLength))
         save(directory, sampleName)
+
+        # waiting for the heating time interval
+        time.sleep((totalTimeInterval / numberOfCaptures))
 
 
 

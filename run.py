@@ -8,8 +8,8 @@ def run():
     sampleName = input("Enter sample name: ")
     directory = input("Enter the saving folder directory (C:/directory/.../.../) : ")
 
-    repeatCapture(numberOfCaptures, totalTimeInterval, sampleName, directory, scanLength)
-
+    repeatCapture(numberOfCaptures, totalTimeInterval, sampleName,  scanLength, directory)
+    
 
 if __name__ == '__main__':
     run()
