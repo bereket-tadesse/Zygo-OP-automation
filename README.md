@@ -1,6 +1,4 @@
- ####### Zygo Profilometer Automation program #### 
-  
-  
+Zygo Profilometer Automation program
   
 This python script needs the following parameters:
 
