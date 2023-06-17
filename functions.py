@@ -45,7 +45,7 @@ def save(directory , sampleName):
     pyautogui.typewrite(directory + sampleName)
     
     ## need to find the lcoation of OK button from the compurer screen size
-    # pysutogui.position()
+    # pysutogui.position().
     # pyautogui.move (x,y, time)
     # pyautogui.click()
 
