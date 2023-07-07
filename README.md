@@ -1,6 +1,6 @@
 Zygo Profilometer Automation program
   
-This python script needs the following parameters:
+parameters:
 
 - Sample: name of sample
 - time interval: the total time interval for the heating process
@@ -12,6 +12,6 @@ This python script needs the following parameters:
 - And the directory path for saving the captured files.
 
 
-Check requirements.txt for required packages. 
+> required packages in requirements.txt. 
 
 >> Project file hierarchy <<
