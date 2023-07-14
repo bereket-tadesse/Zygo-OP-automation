@@ -2,9 +2,9 @@ Zygo Profilometer Automation program
   
 parameters:
 
-- Sample: name of sample
-- time interval: the total time interval for the heating process
-- the number of captures to be taken
+- Sample: name of sample.
+- time interval: the total time interval for the heating process.
+- the number of captures to be taken.
 - the scan length
 - the directory path for saving the captured files.
 
