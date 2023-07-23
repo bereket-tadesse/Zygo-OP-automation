@@ -1,6 +1,6 @@
 Zygo Profilometer Automation program
   
-parameters:
+Parameters:
 
 - Sample: name of sample.
 - time interval: the total time interval for the heating process.
