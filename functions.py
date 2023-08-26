@@ -1,6 +1,6 @@
 # functions to be used to help capture the maginified view from Zygo Optical profilometer.
 
-#requried python package to run the program 
+#requried python package to run the program.
 import pyautogui
 import time
 
